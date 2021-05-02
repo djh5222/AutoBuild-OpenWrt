@@ -93,6 +93,13 @@ jobs:
         rm -rf luci-theme-netdata
         git clone https://github.com/sirpdboy/luci-app-netdata.git
         
+    - name: helloword
+      working-directory: ./openwrt
+      run: |
+        cd package/lean
+        git clone https://github.com/jerrykuku/lua-maxminddb.git
+        git clone https://github.com/jerrykuku/luci-app-vssr.git
+        
     - name: Configuration Customization - Build_x86_64
       env:
         CONFIG_FILE: 'x86_64.config'
