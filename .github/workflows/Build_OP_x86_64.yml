@@ -90,7 +90,7 @@ jobs:
       working-directory: ./openwrt
       run: |
         cd package/lean
-        rm -rf luci-theme-netdata
+        rm -rf luci-app-netdata
         git clone https://github.com/sirpdboy/luci-app-netdata.git
         
     - name: helloword
